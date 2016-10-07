@@ -14,6 +14,8 @@ class Alumno{
     var apellidos : String
     var matricula : String
     var carrera : String
+    var telefono : String?
+    var direccion : String?
     
     var materias : [Materia]
     
@@ -41,5 +43,17 @@ class Alumno{
         
         self.materias=[]
     }
+    init(nombre : String, apellidos : String, matricula : String, carrera : String, telefono : String, direccion : String){
+        self.nombre = nombre
+        self.apellidos = apellidos
+        self.matricula = matricula
+        self.carrera = carrera
+        self.direccion = direccion
+        self.telefono = telefono
+        
+        
+        self.materias=[]
+    }
+    
     
 }
